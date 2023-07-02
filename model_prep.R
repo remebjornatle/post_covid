@@ -1,4 +1,6 @@
 
+#prerun the prep.R-file to ensure packages are ready
+
 ##########################READ DATA#############################################
 
 df = read.csv(".../data.csv")

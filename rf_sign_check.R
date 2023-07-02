@@ -1,9 +1,11 @@
 
+#prerun the prep.R-file to ensure packages are ready
+
 #NOTE:
-#df is preloaded into memory and the rf_fit model
+#df is preloaded into memory and the rf_fit model is run based on random_forest.R
 
-#check rf-sign: input - rf-model
 
+##################Create empty dataframe to store############################
 #empty frame where results will be stored
 frame = data.frame(var = as.character(),
                    diff = as.numeric(),
@@ -16,7 +18,7 @@ df_temp = df[,2:ncol(df)]
 #p <- predict(rf_fit, data=df[,2:ncol(df)])
 
 
-#LOOOP OVER ALL VARIABLES
+################Loop over all variables#################################
 
 for (i in 1:ncol(df_temp)) { 
 

@@ -2,6 +2,7 @@
 #NOTE:
 #The "prep"-part of this file was different depending on subsample. This file shows
 #for the main model.
+#prerun the prep.R-file to ensure packages are ready
 
 ############################Load library and data############################### 
 

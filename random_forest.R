@@ -1,5 +1,5 @@
 
-source(".../model_prep.r")
+#prerun the prep.R-file to ensure packages are ready
 
 #######RECIPE AND WORKFLOW###############
 rf_rec <-  recipe(y ~ ., data=train_r992)

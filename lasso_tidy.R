@@ -1,5 +1,5 @@
 
-source(".../model_prep.r")
+#prerun the prep.R-file to ensure packages are ready
 
 ########TUNING TIDYMODELS###########
 #train model
@@ -45,6 +45,9 @@ las_fit_vi <-  las_fit_pars%>%vi() #return variable importance
 
 #see VIs
 las_fit_vi%>%vip(num_features=27)
+
+#write file
+write.csv(las_fit_vi, ".../las_vi.csv", row.names = F)
 
 #########AUC OG ROC###########
 

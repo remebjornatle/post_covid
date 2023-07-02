@@ -1,6 +1,8 @@
 
 #NOTE: 
 #Datafile called "df" preloaded into memory
+#prerun the prep.R-file to ensure packages are ready
+
 
 ##########################TABLE OF DESCRIPTIVES##################################
 
